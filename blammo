@@ -1,0 +1,84 @@
+##
+# blammo.py
+# By: Finn McKenzie
+# Date created: 5/8/22
+# Date modified: 16/8/22
+
+# Instructions text
+def instructions():
+    print("""\nBlammo! is a really simple game. Here's how you play:
+
+Your aim is to maximise the amount of money you win.
+The game begins with 20 cases, each with a different
+(unknown) cash amount in them.
+
+Start by picking one case out of the 20. Next you
+will answer a science question, and then eliminate
+one of the remaining cases. You will repeat this
+process a few times. Every so often, you will get
+a cash offer. If you answer the science questions
+correctly, you will get a higher offer. Answer
+them wrong and you get a lower one.
+
+The game ends when you either accept an offer or
+eliminate all the cases, in which case you get
+the amount of money in your case.
+
+Have fun playing and good luck!
+
+The team at Blammo!""")
+
+# Credits text
+
+
+# Create question and answer dictionaries
+
+
+# Offer function
+
+
+# Difficulty function
+
+
+# Gameplay function
+
+
+# Menu function
+def menu():
+    option = input("""\n***********
+Enter:
+P to Play
+S to Select difficulty
+R for Rules
+C for Credits
+Q to Quit
+***********
+-> """).strip().lower()
+    while option not in ["p", "s", "r", "c", "q"]:
+        option = input("""\nError, please enter a valid input
+***********
+Enter:
+P to Play
+S to Select difficulty
+R for Rules
+C for Credits
+Q to Quit
+***********
+-> """).strip().lower()
+    return option
+
+# Main function
+if __name__ == "__main__":
+    print("Welcome to Blammo!")
+    choice = ""
+    while choice != "q":
+        choice = menu()
+        if choice == "p":
+            pass
+        elif choice == "s":
+            pass
+        elif choice == "r":
+            instructions()
+        elif choice == "c":
+            pass
+    print("\nWe're sad to see you go! Hope you enjoyed")

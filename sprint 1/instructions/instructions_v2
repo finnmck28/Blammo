@@ -1,0 +1,28 @@
+##
+# instructions_v2.py
+# By: Finn McKenzie
+# Date created: 10/8/22
+# Date modified: 12/8/22
+
+def instructions():
+    print("""Your aim is to maximise the amount of money you win.
+The game begins with 20 cases, each with a different
+(unkown) cash amount in them.
+
+Start by picking one case out of the 20. Next answer
+a science question, and then eliminate one of the
+remaining cases. You will repeat this process a few
+times. Every so often, you will get a cash offer. If
+you answer the science questions correctly, you will
+get a higher offer. Answer them wrong and you get a
+lower one.
+
+The game ends when you either accept an offer or
+eliminate all the cases except your one, where
+you get the amount of money in the case.
+
+Good luck!
+
+The team at Blammo!""")
+
+instructions()

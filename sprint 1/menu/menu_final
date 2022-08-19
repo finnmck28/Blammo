@@ -1,0 +1,33 @@
+##
+# menu_final.py
+# By: Finn McKenzie
+# Date created: 10/8/22
+# Date modified: 10/8/22
+
+def menu():
+    print("Welcome to Blammo!")
+
+    option = input("""\n***********
+Enter:
+P to Play
+S to Select difficulty
+R for Rules
+C for Credits
+Q to Quit
+***********
+-> """).strip().lower()
+    while option not in ["p", "s", "r", "c", "q"]:
+        option = input("""\nError, please enter a valid input
+***********
+Enter:
+P to Play
+S to Select difficulty
+R for Rules
+C for Credits
+Q to Quit
+***********
+-> """).strip().lower()
+    return option
+
+menu()
+                         

@@ -1,0 +1,30 @@
+##
+# instructions_v1.py
+# By: Finn McKenzie
+# Date created: 10/8/22
+# Date modified: 10/8/22
+
+def instructions():
+    print("""At the start of the game pick a case.
+This case has anywhere between 1 cent and
+1 million dollars, so choose carefully!
+
+Then answer science questions and eliminate
+the remaining cases available.
+
+Every few questions you will get an offer
+of money. The more questions you get right
+prior to the offer, the better the offer
+will be. You may either except the offer
+and end the game there, or decline the offer
+and keep eliminating cases and answering
+questions.
+
+If all cases are eliminated, you get to
+open the case you chose at the beginning
+and keep the money inside. Hopefully you
+chose well!
+
+Have fun playing - the Blammo! team""")
+
+instructions()

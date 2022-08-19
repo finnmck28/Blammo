@@ -1,0 +1,29 @@
+##
+# menu_v1.py
+# By: Finn McKenzie
+# Date created: 9/8/22
+# Date modified: 9/8/22
+
+def menu():
+    print("""Welcome to Blammo! Answer science
+questions and get lucky to win
+$1,000,000 for your next science project!""")
+
+    option = input("""\n1. Play
+2. Difficulty
+3. Rules
+4. Credits
+
+Enter your choice here: """).strip()
+    while option not in ["1", "2", "3", "4"]:
+        option = input("""\nError, please enter a valid input
+1. Play
+2. Difficulty
+3. Rules
+4. Credits
+
+Enter your choice here: """).strip()
+    return option
+
+menu()
+                         

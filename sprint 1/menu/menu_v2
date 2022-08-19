@@ -1,0 +1,32 @@
+##
+# menu_v2.py
+# By: Finn McKenzie
+# Date created: 9/8/22
+# Date modified: 9/8/22
+
+def menu():
+    print("""Welcome to Blammo!
+It's the sciencetastic game everyone's been talking about""")
+
+    option = input("""\n***********
+P - Play
+D - Difficulty
+R - Rules
+C - Credits
+***********
+
+What would you like to do? """).strip().lower()
+    while option not in ["p", "d", "r", "c"]:
+        option = input("""\nError, please enter a valid input
+***********
+P - Play
+D - Difficulty
+R - Rules
+C - Credits
+***********
+
+What would you like to do? """).strip().lower()
+    return option
+
+menu()
+                         
